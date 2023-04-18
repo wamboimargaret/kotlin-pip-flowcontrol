@@ -1,5 +1,6 @@
 fun main() {
 fizzBuzz()
+    oddNumbers()
 }
 
 //Write a function that prints each number from 1 to 100 on a new line. For each
@@ -20,4 +21,14 @@ fun fizzBuzz() {
             println(num)
         }
     }
+}
+
+//Create a function that prints out all the odd numbers between 1 and 100
+fun oddNumbers(){
+    var nums= 1..100
+    for (num in nums){
+        if (num % 2!=0)
+            println(num)
+    }
+
 }
